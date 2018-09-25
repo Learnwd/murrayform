@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <title>Form</title>
+</head>
+
+<body>
+   <style>
+      .abLeadForm *,
+      .abLeadForm *:before,
+      .abLeadForm *:after {
+         -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+         box-sizing: border-box;
+      }
+
+      .abLeadForm {
+         padding: 15px;
+         background: #FFF;
+         border: 1px solid #ddd;
+         border-radius: 4px;
+         margin: 0 auto;
+         max-width: 290px;
+         display: block;
+         color: black;
+         font-size: 16px;
+      }
+
+      .abLeadForm p {
+         margin: 0 0 1em 0;
+      }
+
+      .abLeadForm input[type="text"],
+      .abLeadForm select {
+         width: 100%;
+         padding: 8px;
+         background: white;
+         border-radius: 4px;
+         border: 1px solid #ccc;
+         font-size: 1em;
+         max-width: 100%;
+      }
+
+      .abLeadForm button[type="submit"] {
+         width: auto;
+         padding: 16px;
+         background: grey;
+         color: white;
+         border-radius: 4px;
+         border: 0px;
+         font-size: 1em;
+         cursor: pointer;
+      }
+
+      .abHP {
+         display: none !important;
+      }
+
+      /*---form captcha---*/
+
+      .g-recaptcha>div {
+         margin-left: 33%;
+      }
+
+      #rc-imageselect,
+      .g-recaptcha {
+         transform: scale(0.77);
+         -webkit-transform: scale(0.77);
+         transform-origin: 0 0;
+         -webkit-transform-origin: 0 0;
+      }
+
+      #rc-imageselect>div,
+      .g-recaptcha>div {
+         margin: 0;
+         width: 291px !important;
+      }
+
+   </style>
+   <form action="https://app.agencybloc.com/fp/webToLead/v1/WR6HXMLJXW0M2S9TLMGG/" method="post" class="abLeadForm">
+      <p><label for='firstName'>First Name</label><br /><input type='text' name='firstName'></p>
+      <p><label for='lastName'>Last Name</label><br /><input type='text' name='lastName'></p>
+      <p><label for='email'>Email</label><br /><input type='text' name='email'></p>
+      <p><label for='homePhone'>Home Phone</label><br /><input type='text' name='homePhone'></p>
+      <p class="abHP"> <label for="_Website">Website</label> <input type="text" name="_Website" value=""> </p>
+      <p> <button type="submit">Submit</button> </p>
+   </form>
+</body>
+
+</html>
